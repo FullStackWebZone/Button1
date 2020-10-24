@@ -1,0 +1,49 @@
+// @import "compass/css3";
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  font-size: 62.5%;
+}
+body {
+  background: #0D0C0C;
+}
+
+.jiggle {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -8.5rem;
+  margin-top: -3.6rem;
+  width: 17rem;
+  height: 7.2rem;
+  font-size: 2.4rem;
+  font-family: 'Raleway', Helvetica, Arial, sans-serif;
+  letter-spacing: 0.4rem;
+  text-shadow: 0 0.2rem rgba(0,0,0,0.2);
+  color: #ffffff;
+  background-color: #04AE67;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  animation: anim 2s ease-in infinite;
+  
+  &:focus {
+    outline: none;
+  }
+}
+
+@keyframes anim {
+  5% {
+    transform: scale(1.1, 0.9);
+  }
+  10% {
+    transform: scale(0.9, 1.1) translateY(-0.5rem);
+  }
+  15% {
+    transform: scale(1);
+  }
+}
